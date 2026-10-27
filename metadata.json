@@ -1,0 +1,6 @@
+{
+  "name": "IL VANTO — Parfums de Luxe",
+  "description": "Luxury niche alternative fragrances crafted with premium raw materials, exquisite longevity, and iconic inspirations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

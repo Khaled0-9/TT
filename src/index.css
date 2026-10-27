@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Marcellus', 'Cinzel', Georgia, serif;
+    --font-cinzel: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-arabic: 'Tajawal', sans-serif;
+  }
+}
+
+.font-serif-luxury {
+  font-family: var(--font-serif);
+  letter-spacing: 0.04em;
+}
+
+.font-cinzel-brand {
+  font-family: var(--font-cinzel);
+  letter-spacing: 0.12em;
+}
+
+.font-arabic-luxury {
+  font-family: var(--font-arabic);
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: ticker 25s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F1EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4B59D;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9D8355;
+}
